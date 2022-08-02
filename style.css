@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+}
+body{
+    display: flex;
+}
+
+fieldset{
+    margin-left: 50px;
+    margin-top:20px;
+    width: 30%;
+    height: auto;
+    background-color: lightgray;
+    padding:10px;
+
+}
+
+h3{
+
+    margin-top: 10px;
+}
+
+.submit{
+    float: right;
+    margin: 10px;
+    padding: 5px 10px;
+    color:white;
+    background-color:black;
+    transition: .3s;
+    text-transform: uppercase;
+}
+.submit:hover{
+    background-color:white;
+    color:black;
+}
+section{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+textarea{
+    width: 100%;
+    height: auto;
+}
+a{
+    color:red;
+}
+.a_name{
+    color:black;
+}

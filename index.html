@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<main>
+<form class="form" action="#" method="post" name="form">
+    <fieldset>
+        <legend><strong>Twoje dane</strong></legend>
+        <br>
+        <label><h3>Imie:</h3><input class="name" type="text" name="name" placeholder="np. Jan" size="50" onkeyup="przeslij()">
+        </label>
+        <label><h3>Nazwisko:</h3><input class="surname" id="surname" type="text" name="surname" placeholder="np. Kowalski" size="50" onkeyup="przeslij()" >
+        </label>
+        <label><h3>E-mail:</h3><input class="email" type="email" name="email" placeholder="np. jan.kowalski@gmail.com" size="50" onkeyup="przeslij()">
+        </label>
+        <label><h3>Telefon:</h3><input class="telephone" type="text" name="telephone" placeholder="np. 799555655" size="25" maxlength="9" pattern="[0-9]{9}" title="Must have 9 numbers!" onkeyup="przeslij()">
+        </label><br>
+        <label><h3>Płeć:</h3><input class="male" type="radio" name="gender" value="male" onchange="przeslij()" default="">M:
+        <input class="female" type="radio" name="gender" value="female" onchange="przeslij()">F:
+        </label>
+        <label><h3>Obywatelstwo PL:</h3><input class="checkbox" type="checkbox" name="checkbox" onchange="przeslij()"></label>
+        <label>
+            <h3>Wykształcenie:</h3>
+            <select name="lista" class="list" onchange="przeslij()">
+                <option>podstawowe</option>
+                <option>średnie</option>
+                <option>wyższe</option>
+            </select>
+        </label>
+        <label><h3>Zawód:</h3>
+            <textarea class="tekst" name="textarea" onkeyup="przeslij()"></textarea></label>
+
+            <input type="submit" class="submit">
+
+
+
+    </fieldset>
+</form>
+
+</main>
+<section>
+    <a class="a_name">Name: </a><a id="wynik_name"></a><br>
+    <a class="a_name">Surname: </a><a id="wynik_surname"></a><br>
+    <a class="a_name">E-mail: </a><a id="wynik_email"></a><br>
+    <a class="a_name">Telephone: </a><a id="wynik_telephone"></a><br>
+    <a class="a_name">Gender: </a><a id="wynik_gender"></a><br>
+    <a class="a_name">Obywatelstwo PL: </a><a id="wynik_pl"></a><br>
+    <a class="a_name">Wykształcenie: </a><a id="wynik_lista"></a><br>
+    <a class="a_name">Zawód: </a><a id="wynik_tekst"></a><br>
+</section>
+
+</body>
+</html>
